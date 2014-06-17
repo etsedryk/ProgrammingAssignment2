@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
     }
     ## Retrieve 'x' fom cache
     data <- x$get()
-    ## Calculate the inverse of 'x' retrived from cache 
+    ## Calculate the inverse of 'x' retrieved from cache 
     m <- solve(data, ...)
     ## Retrieve the value of the inverse from cache
     x$setinverse(m)
